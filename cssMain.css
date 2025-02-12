@@ -1,0 +1,531 @@
+html {
+  background-color: #e2ece9;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+
+.hitTheFloor {
+
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background-color: #d1e0db;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.01s ease-in-out;
+}
+
+.whatsapp {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #00ff00;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.02s ease-in-out;
+}
+
+.linkedin {
+  margin-top: 1.5em;
+  margin-left: -0.9em;
+  fill: #0077b5;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.02s ease-in-out;
+}
+
+.github {
+  margin-top: -0.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.02s ease-in-out;
+}
+
+.discord {
+  margin-top: -0.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #00ff00;
+}
+
+.card1:hover .whatsapp {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #496f83;
+}
+
+.card2:hover .linkedin {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.cube-container {
+  width: 200px;
+  height: 200px;
+  perspective: 800px;
+  margin: 50px auto;
+  transition: 0.8s ease-out;
+}
+
+
+
+.cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate 8s infinite linear;
+}
+
+.face {
+  --french: linear-gradient(
+      to right,
+      #242721,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #1a0707
+    )
+    1;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  line-height: 200px;
+  background: #000000cc;
+  border: 2px solid;
+  border-image: var(--french);
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.topHeader {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 1fr 1.5fr 1fr;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1000px) {
+  .topHeader {
+    grid-template-columns: 1fr; /* Stack all items in a single column */
+    grid-template-rows: auto auto auto auto; /* Create rows for each item */
+    justify-items: center; /* Center the items within their grid cells */
+    gap: 20px; /* Adjust the gap between the items */
+  }
+  .skrollMainSection {
+    
+  }
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #422f2f;
+  background-color: #d1e0db;
+
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+}
+
+.mainSection {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 2rem;
+
+}
+.container {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 15px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+
+  
+}
+
+.container p {
+  width: 50rem; /* Sets the width of the paragraph */
+  margin: 2rem; /* Centers the paragraph horizontally */
+  text-align: center; /* Centers the text inside the paragraph */
+  overflow: hidden; /* Ensures any overflowing text is hidden */
+  text-overflow: ellipsis; /* Adds an ellipsis (...) to indicate overflowed text */
+
+}
+
+
+
+.skrollMainSection::-webkit-scrollbar {
+  display: none;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  background-color: #c3d1cc;
+  margin-bottom: 1rem;
+
+
+
+}
+.bildAbout {
+  max-width: 30vw;
+  border-radius: 55px;
+}
+#skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+
+  background-color: #c3d1cc;
+  margin-bottom: 1rem;
+
+
+
+}
+#experience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c3d1cc;
+
+  border-radius: 5rem;
+  margin-bottom: 1rem;
+
+
+}
+#education{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  background-color: #c3d1cc;
+  margin-bottom: 1rem;
+
+
+ 
+}
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+
+ 
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;  /* Optional: removes the indentation */
+}
+
+
+.skrollMainSection {
+
+  border-radius: 15px;
+  overflow-y: auto; /* Aktiverar vertikal scroll */
+  overflow-x: hidden; /* Döljer horisontell scroll */
+  padding: 10px;
+  height: 60vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.maincardSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap to prevent overflow */
+  gap: 20px; /* Add spacing between cards */
+  padding: 20px;
+}
+
+.cardSection {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Prevents overflow */
+  gap: 20px;
+  padding: 10px;
+  
+}
+
+
+.card {
+  background: rgba(154, 89, 175, 0.5);
+  position: relative;
+  max-width: 250px;
+  height: 350px;
+  border-radius: 5px;
+  padding: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 7.5px;
+  transition: 0.5s ease;
+  color: white;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+        35.36% 35.36% at 100% 25%,
+        #0000 66%,
+        #c79013 68% 70%,
+        #0000 72%
+      )
+      32px 32px / calc(2 * 32px) calc(2 * 32px),
+    radial-gradient(
+        35.36% 35.36% at 0 75%,
+        #0000 66%,
+        #c79013 68% 70%,
+        #0000 72%
+      )
+      32px 32px / calc(2 * 32px) calc(2 * 32px),
+    radial-gradient(
+        35.36% 35.36% at 100% 25%,
+        #0000 66%,
+        #c79013 68% 70%,
+        #0000 72%
+      )
+      0 0 / calc(2 * 32px) calc(2 * 32px),
+    radial-gradient(
+        35.36% 35.36% at 0 75%,
+        #0000 66%,
+        #c79013 68% 70%,
+        #0000 72%
+      )
+      0 0 / calc(2 * 32px) calc(2 * 32px),
+    repeating-conic-gradient(#295b3f 0 25%, #0000 0 50%) 0 0 / calc(2 * 32px)
+      calc(2 * 32px),
+    radial-gradient(#0000 66%, #c79013 68% 70%, #0000 72%) 0 calc(32px / 2) /
+      32px 32px #295b3f;
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.card:hover::after {
+  opacity: 0.25;
+}
+
+.cardHeader {
+  text-transform: uppercase;
+  position: relative;
+  width: max-content;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.cardHeader::after {
+  content: "";
+  width: calc(100% + 1rem);
+  height: 2.5px;
+  transform: translateX(calc(-100% - 1rem));
+  background: aqua;
+  bottom: -2px;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+.details {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transform: translateY(95%);
+  transition: all 0.5s ease;
+}
+
+.button {
+  background-color: aqua;
+  color: black;
+  padding: 2.5px 5px;
+  width: max-content;
+  border-radius: 2.5px;
+}
+.card:hover .details {
+  transform: translateY(0%);
+  transition-delay: 0.5s;
+}
+.card:hover .cardHeader::after {
+  transform: translateX(-1rem);
+  transition: 0.5s ease;
+  opacity: 1;
+}
+.card:hover {
+  transform: scale(1.1);
+  border-radius: 15px;
+}
