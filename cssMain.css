@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  background-color: #d1e0db;
 }
 
 .up {
@@ -248,9 +247,7 @@
     justify-items: center; /* Center the items within their grid cells */
     gap: 20px; /* Adjust the gap between the items */
   }
-  .skrollMainSection {
-    
-  }
+
 }
 
 
@@ -259,9 +256,6 @@
   html {
     width: 100vw;  
   }
-  .maincardSection {
-    
-  }
 
 }
 
@@ -269,10 +263,9 @@
 
 .header {
   display: flex;
-  align-items: center;
   flex-direction: column;
   color: #422f2f;
-  background-color: #d1e0db;
+  background-color: #ffffff;
 
   text-align: center;
   padding: 1rem;
@@ -388,8 +381,8 @@ ul {
   height: 60vh;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 
@@ -401,7 +394,12 @@ ul {
 
 
 
-
+.projektT {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
 
 
 
