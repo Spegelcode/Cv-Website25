@@ -1,10 +1,3 @@
-html {
-  background-color: #e2ece9;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-}
 
 
 .hitTheFloor {
@@ -266,6 +259,9 @@ html {
   html {
     width: 100vw;  
   }
+  .maincardSection {
+    
+  }
 
 }
 
@@ -307,7 +303,6 @@ html {
 }
 
 .container p {
-  width: 50rem; /* Sets the width of the paragraph */
   margin: 2rem; /* Centers the paragraph horizontally */
   text-align: center; /* Centers the text inside the paragraph */
   overflow: hidden; /* Ensures any overflowing text is hidden */
