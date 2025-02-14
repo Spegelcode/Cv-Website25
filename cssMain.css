@@ -261,6 +261,16 @@ html {
 }
 
 
+
+@media screen and (max-width: 768px) {
+  html {
+    width: 100vw;  
+  }
+
+}
+
+
+
 .header {
   display: flex;
   align-items: center;
