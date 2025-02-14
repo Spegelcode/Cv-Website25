@@ -252,13 +252,6 @@
 
 
 
-@media screen and (max-width: 768px) {
-  html {
-    width: 100vw;  
-  }
-
-}
-
 
 
 .header {
@@ -294,12 +287,30 @@
 
   
 }
-
 .container p {
   margin: 2rem; /* Centers the paragraph horizontally */
   text-align: center; /* Centers the text inside the paragraph */
   overflow: hidden; /* Ensures any overflowing text is hidden */
   text-overflow: ellipsis; /* Adds an ellipsis (...) to indicate overflowed text */
+
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    width: 100vw;  
+  }
+  .container p {
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;}
+
+
+  .container {
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;}
 
 }
 
